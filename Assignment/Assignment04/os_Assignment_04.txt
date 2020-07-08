@@ -1,0 +1,49 @@
+Paging :
+    After the segmentation concept in which memory management How memory allocate in the
+    Ram at the running time .But there are some problem.Then we achieved the Paging concept
+    in which we split the data logically not physically.Due to paging we get many benefits like 
+    protection ,cache Coherence ,etc
+
+**Protection**:
+    With the help of Paging we got the Protection from the Malware virus ,malicious codes.
+    Actually malicious code work like when the function call goes into the stack and allocate 
+    the space of local variable in some how malicious code keep in the place of local variable
+    and write the address of this local variable on the function return call then execute the 
+    malicious code then with the help of paging "we allow the only to write the malicious code
+    not the execute that code.
+
+Sharing:
+    with help of paging we share the data as virtual memory.virtual memory makes the memory
+    sharing easily.we don't need to inter process communication.
+
+swap Spaces:
+    In demand page in which page table frame which store in the cache which is very fast and store 
+    all other data in the swap space/partition.When we need which is not in ram we take form the Swap Spaces
+    and load into the memory.identify using valid and not valid Condition.
+
+Cache Coherence:
+    by using cache Coherence our work done very Quickly.by using Page Replacement policy
+    we take the data form Hardware to Cache memory before we  use it.if the Data again again 
+    give and take from the Hardware then its become very slow.
+
+---------------------------------------------------------------------------------------------------------------------------- 
+File System:
+    file System is part of operating system which is responsible for storing the Data 
+    and retrieving the data form.For example if we save the file.txt then os will handle
+    and where it save and how it save which is abstraction save it somewhere on the Hardware
+    Everything use in this process is called file system.Different OS has Different file system
+    like WINDOW fat32 , NTFS , ext4 etc
+    
+    File system has also interact with Block stream device which is has no concept of Addressing
+    like Network Card Printer etc
+
+virtual File System:
+    virtual file system generally is a layer which is sit on the of your actual file System 
+    which allow the user to access different type of file system .In the linux __proc__ is
+    the Virtual file system which access the user to access different file system 
+
+Benefits and Importance:
+    Every device has own design for the os very Difficult to handle all the design 
+    so with help of virtual file system we only need to check and update the
+    file system instead of All.VFs provide us Abstraction for the MetaData caching
+    ,permission check which benefits disk base file system.

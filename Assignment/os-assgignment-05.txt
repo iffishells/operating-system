@@ -1,0 +1,46 @@
+Security and Protection :
+    There are two types of Security;
+    1   :  Network Security
+    2   :  System Security
+
+    System Security have tow main things .One of Authorization and Malware stuff.In Security which is policy
+    prevention of unauthorized Access to a system.for example Malicious Code and Accidental Access .Access may
+    be the some execution the code and read information which is private etc 
+    our main goal in Security and Protection is secure the Data .i Will secure tha Data using some more concept
+    
+    .Authentication and confidentiality and integrity and Availabilty .We give the handle to the user at least 
+    he Perform the operation .Actually User interact with the Process .Authentication is that WHo will do that.
+    Integrity mean that verify the Data not be compromize like modify and update and added.confidentiality Not Everyone 
+    access the Data unless allow it .Availbility mean that who can do this.Who can access the system.
+
+Access control Matrix/list:
+    Access control Matrix in which we save the Module. In the column we adds the object and the row we add the
+    Domain.
+
+    D0 = [Ali , usman]
+    D1 = [Farooq]
+
+    F0 = [Desktop ,Documents]
+    f1 = [/var]
+    
+        f0          f1          Printer   
+    D0  read        read-write  print
+    D1  write       read                
+    D2  execute     
+    This is Access control matrix we set the subject and object and their right . In Here we can change the domain 
+    form High priority to low priority but not reversible.for example HOD Change into the instructor but instructor 
+    not change into the HOD.But most of the ACL access control list in which we define column wise.Because create 
+    the single table is im-practicle 
+    
+Password Management ,Hashes and salt:
+    We usually save the password in the plain text type which is very bad for Security.if Hacker some how he Hack
+    the file where you save the password then he hack it. But in order to gain the Security for our Password
+    Management we use the Hash function which our password go through this function and encrypt into other form
+    if Someone hack your Password then he not be able to predict the real function.But we not use the mod function 
+    for Hashing Because by using mod we can predict the inputs form the output .
+    
+    So we need like function which is not reversible that is SHA256 which is not reversible if someone Hacked it
+    then he will never predict real input. in Order to seek more Security we add some valid Number in the Hash For 
+    the Security.how the function compute the Hash this is Abstraction
+    
+
